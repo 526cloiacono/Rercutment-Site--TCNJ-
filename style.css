@@ -1,5 +1,8 @@
 body {
-  font-family: "Century Gothic", 'Lato', sans-serif;
+font-family: "adobe-garamond-pro", serif;
+font-weight: 700;
+font-style: normal;
+font-size: 200px;
 }
 
 a {
@@ -24,7 +27,7 @@ a {
   margin: 0;
   letter-spacing: 1rem;
   color: #A67A00; /* Gold titles */
-  text-shadow: 2px 2px #293F6F; /* Blue shadow for contrast */
+  text-shadow: 1px 1px #293F6F; /* Blue shadow for contrast */
 }
 
 .et-hero-tabs h3 {
