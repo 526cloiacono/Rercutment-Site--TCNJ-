@@ -30,7 +30,7 @@ body {
   height: 100vh;
   text-align: center;
   padding: 0 2em;
- background-image: url('img/tcnj-back.jpg'); /* Replace with your image path */
+ background-image: url('img/trenton-hall-aerial.jpg'); /* Replace with your image path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -38,11 +38,11 @@ body {
 }
 
 .et-hero-tabs h1 {
-  font-size: 1rem;
+  font-size: 120px;
   margin: 0;
   letter-spacing: 1rem;
-  color: var(--tcnj-gold);
-  text-shadow: 1px 1px var(--tcnj-blue);
+  color: #A67A00;
+  text-shadow: 2px 2px var(--tcnj-blue);
 }
 
 .et-hero-tabs h3 {
