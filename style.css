@@ -11,8 +11,17 @@ body {
   color: var(--text-gray);
   padding: 1rem;
   margin: 0;
+  /* background-color: var(--tcnj-gold); */
 }
-
+.homeb{
+   font-family: "adobe-garamond-pro", serif;
+  font-weight: 700;
+  background: #FFFFFF;
+  color: var(--text-gray);
+  padding: 1rem;
+  margin: 0;
+  background-color: var(--tcnj-gold);
+}
 .head {
   text-align: center;
   color: var(--tcnj-gold);
@@ -35,6 +44,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  border-radius: 25px 25px;
 }
 
 .et-hero-tabs h1 {
@@ -155,8 +165,18 @@ p{
 }
 .his{
   border-radius: 25px;
-  border: 7px solid grey;
+  border: 7px solid var(--tcnj-gold);
 }
 .background{
   background-color: lightgrey;
+}
+/* start of quote */
+#press-quote{
+  color: var(--tcnj-gold);
+  background-color: var(--tcnj-blue);
+  font-size: 25px;
+  padding: 5px;
+  border-radius: 15px 15px;
+  margin-left: 300px;
+  margin-right: 300px;
 }

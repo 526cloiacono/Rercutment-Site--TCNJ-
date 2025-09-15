@@ -93,3 +93,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
   renderAlumni(alumni);
 });
+
+
+
+// quote gen
+var quotesArray = [
+		'Founded in 1855, TCNJ was the first teacher-training school in New Jersey. — TCNJ Archives',
+'The campus in Ewing is known for its Georgian-style architecture and scenic greenery. — Princeton Review',
+'Author Holly Black, co-creator of The Spiderwick Chronicles, attended TCNJ. — Alumni Records',
+'Indie rock band Real Estate was formed by students who met at TCNJ. — Pitchfork',
+'Roscoe the Lion proudly represents the TCNJ Lions athletic teams. — Athletics Department',
+'TCNJ is consistently ranked among the top public colleges in the U.S. for undergraduate teaching. — U.S. News',
+'The school’s roots in education remain strong, with one of the best teaching programs in the state. — NJ Education Review',
+'TCNJ’s library is named after Dr. Roscoe West, a former president of the college. — Campus History',
+'Every spring, TCNJ hosts fun traditions like “Spirit Week” and community festivals. — Student Life',
+'Despite being a public college, TCNJ has the feel of a small, private liberal arts school. — Forbes'
+
+	]
+	var randomNumber = Math.floor(Math.random() * quotesArray.length);
+	document.getElementById('press-quote').textContent ='“'+ quotesArray [randomNumber].split(' — ')[0] + '”-' + quotesArray[randomNumber].split('—')[1];
