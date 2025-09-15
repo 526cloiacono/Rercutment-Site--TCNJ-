@@ -137,8 +137,26 @@ body {
   color: var(--tcnj-gold);
 }
 
+ /* start of major */
 .note {
   font-style: italic;
   opacity: 0.9;
   font-size: 0.86rem;
+}
+
+
+p{
+  color: white;
+  font-size: 27px;
+}
+.words{
+  border-radius: 25px;
+  padding: 15px;
+}
+.his{
+  border-radius: 25px;
+  border: 7px solid grey;
+}
+.background{
+  background-color: lightgrey;
 }
