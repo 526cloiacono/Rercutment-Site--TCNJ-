@@ -55,7 +55,7 @@ body {
   text-shadow: 2px 2px var(--tcnj-blue);
 }
 
-.et-hero-tabs h3 {
+.et-hero-tabs  h3{
   font-size: 1rem;
   letter-spacing: 0.3rem;
   opacity: 0.8;
@@ -146,30 +146,29 @@ body {
   font-weight: 600;
   color: var(--tcnj-gold);
 }
-
- /* start of major */
 .note {
   font-style: italic;
   opacity: 0.9;
   font-size: 0.86rem;
 }
+ /* start of major */
+.info{
+  color: var(--tcnj-blue);
+  font-size: 18px;
+}
+h4{
+  color: var(--tcnj-blue);
+  font-size: 22px;
+}
+h5{
+  color: var(--tcnj-gold);
+  font-size: 39px;
+}
+.card{
+  padding: 10px;
 
+}
 
-p{
-  color: white;
-  font-size: 27px;
-}
-.words{
-  border-radius: 25px;
-  padding: 15px;
-}
-.his{
-  border-radius: 25px;
-  border: 7px solid var(--tcnj-gold);
-}
-.background{
-  background-color: lightgrey;
-}
 /* start of quote */
 #press-quote{
   color: var(--tcnj-gold);
