@@ -1,13 +1,13 @@
 :root {
   --tcnj-blue: #293F6F;
-  --tcnj-gold: #A67A00;
+  --tcnj-gold: gold ;
   --text-gray: #333333;
 }
 
 body {
   font-family: "adobe-garamond-pro", serif;
   font-weight: 700;
-  background: #FFFFFF;
+  background: #888383;
   color: var(--text-gray);
   padding: 1rem;
   margin: 0;
@@ -26,7 +26,7 @@ body {
   text-align: center;
   color: var(--tcnj-gold);
   font-size: 100px;
-  text-shadow: 2px 2px var(--tcnj-blue);
+  text-shadow: 3px 3px var(--tcnj-blue);
 }
 
 /* Hero Tabs */
@@ -51,8 +51,8 @@ body {
   font-size: 120px;
   margin: 0;
   letter-spacing: 1rem;
-  color: #A67A00;
-  text-shadow: 2px 2px var(--tcnj-blue);
+  color: gold;
+  text-shadow:3px 3px var(--tcnj-blue);
 }
 
 .et-hero-tabs  h3{
@@ -114,12 +114,13 @@ body {
 
 .card {
   background: #fff;
-  border: 2px solid var(--tcnj-blue);
+  border: 3px solid var(--tcnj-blue);
   border-radius: 10px;
   overflow: hidden;
   text-align: center;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
+  
 }
 
 .card:hover {
@@ -154,18 +155,21 @@ body {
  /* start of major */
 .info{
   color: var(--tcnj-blue);
-  font-size: 18px;
+  font-size: 20px;
 }
 h4{
   color: var(--tcnj-blue);
-  font-size: 22px;
+  font-size: 28px;
 }
 h5{
   color: var(--tcnj-gold);
   font-size: 39px;
+text-shadow: 1.3px 1.3px var(--tcnj-blue);
+
 }
 .card{
   padding: 10px;
+
 
 }
 
@@ -179,3 +183,5 @@ h5{
   margin-left: 300px;
   margin-right: 300px;
 }
+
+
