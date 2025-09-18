@@ -68,9 +68,12 @@ class StickyNavigation {
 
 document.addEventListener("DOMContentLoaded", () => {
   const alumni = [
-    { name: "Paul Rudd", major: "Theater", photo: "https://via.placeholder.com/300x140?text=Paul+Rudd", note: "Actor, Ant-Man" },
-    { name: "Holly Black", major: "English", photo: "https://via.placeholder.com/300x140?text=Holly+Black", note: "Author" },
-    { name: "Jonas Chernick", major: "Film", photo: "https://via.placeholder.com/300x140?text=Jonas+Chernick", note: "Screenwriter & Actor" }
+    { name: "Paul Rudd", major: "Theater", photo: "img/paulrd.jpg", note: "Actor, Ant-Man" },
+    { name: "Holly Black", major: "English", photo: "img/Holly Black.webp", note: "Author" },
+    { name: "Jonas Chernick", major: "Film", photo: "img/JonasChernick.jpg", note: "Screenwriter & Actor" },
+        { name: "Mr. Kilgore", major: "Web, Woodshop", photo: "img/JonasChernick.jpg", note: "Screenwriter & Actor" },
+            { name: "Ms. Leonard", major: "Web, Comp-sci", photo: "img/JonasChernick.jpg", note: "Screenwriter & Actor" },
+                { name: "Jonas Chernick", major: "Film", photo: "img/JonasChernick.jpg", note: "Screenwriter & Actor" },
   ];
 
   function renderAlumni(list) {
