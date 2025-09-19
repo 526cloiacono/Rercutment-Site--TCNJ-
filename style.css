@@ -280,3 +280,25 @@ gap: 20px;
   left: 0;
   z-index: 999;
 }
+
+
+/* Apply Now Button Custom Style */
+.apply-btn {
+  background-color: var(--tcnj-gold);
+  color: var(--tcnj-blue);
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.75rem 2rem;
+  border: 3px solid var(--tcnj-blue);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.apply-btn:hover {
+  background-color: var(--tcnj-blue);
+  color: var(--tcnj-gold);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
