@@ -65,37 +65,58 @@ class StickyNavigation {
     }
   }
 }
+document.addEventListener("DOMContentLoaded", () => {
+  const nav = document.querySelector(".et-hero-tabs-container");
+  const heroHeight = document.querySelector(".et-hero-tabs").offsetHeight;
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY >= heroHeight - nav.offsetHeight) {
+      nav.classList.add("sticky");
+    } else {
+      nav.classList.remove("sticky");
+    }
+  });
+});
 
 document.addEventListener("DOMContentLoaded", () => {
   const alumni = [
     { name: "Paul Rudd", major: "Theater", photo: "img/paulrd.jpg", note: "Actor, Ant-Man" },
     { name: "Holly Black", major: "English", photo: "img/Holly Black.webp", note: "Author" },
     { name: "Jonas Chernick", major: "Film", photo: "img/JonasChernick.jpg", note: "Screenwriter & Actor" },
-        { name: "Mr. Kilgore", major: "Web, Woodshop", photo: "img/JonasChernick.jpg", note: "Screenwriter & Actor" },
-            { name: "Ms. Leonard", major: "Web, Comp-sci", photo: "img/JonasChernick.jpg", note: "Screenwriter & Actor" },
-                { name: "Jonas Chernick", major: "Film", photo: "img/JonasChernick.jpg", note: "Screenwriter & Actor" },
+    { name: "Mr. Kilgore", major: "Web, Woodshop", photo: "img/JonasChernick.jpg", note: "Teacher" },
+    { name: "Ms. Leonard", major: "Web, Comp-sci", photo: "img/JonasChernick.jpg", note: "Teacher" },
+    { name: "Another Alum", major: "Film", photo: "img/JonasChernick.jpg", note: "Screenwriter & Actor" },
   ];
 
   function renderAlumni(list) {
     const grid = document.getElementById("alumniGrid");
+    grid.className = "row"; // make container a Bootstrap row
     grid.innerHTML = "";
+
     list.forEach(alum => {
-      const card = document.createElement("div");
-      card.className = "card";
-      card.innerHTML = `
-        <img src="${alum.photo}" alt="${alum.name}">
-        <div class="card-content">
-          <h3>${alum.name}</h3>
-          <p class="major">${alum.major}</p>
-          <p class="note">${alum.note}</p>
+      // create a column for each card
+      const col = document.createElement("div");
+      col.className = "col-lg-4 col-md-6 col-sm-12 mb-4";
+
+      // build the card
+      col.innerHTML = `
+        <div class="card h-100">
+          <img src="${alum.photo}" class="card-img-top" alt="${alum.name}">
+          <div class="card-body">
+            <h3 class="card-title">${alum.name}</h3>
+            <p class="major mb-1">${alum.major}</p>
+            <p class="note text-muted">${alum.note}</p>
+          </div>
         </div>
       `;
-      grid.appendChild(card);
+
+      grid.appendChild(col);
     });
   }
 
   renderAlumni(alumni);
 });
+
 
 
 
